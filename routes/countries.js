@@ -25,6 +25,13 @@ router.post('/', (req, res) => {
         population: req.body.population,
         gdp: req.body.gdp
     });
+
+    country.save().catch(err => console.log(err));
+
+    res.status(200).json({
+        message: 'Handling POST request to /countries',
+        createdCountry: country
+    });
 });
 
 module.exports = router;

@@ -6,7 +6,7 @@ require('dotenv/config');
 const port  = process.env.PORT || 3000;
 
 //Connect to DB
-mongoose.connect('mongodb+srv://' + process.env.KEY + ':' + process.env.VALUE + '@cars.tccrv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then((result) => app.listen(port)).catch((err) => console.log(err));
+mongoose.connect(DATABASE_URL).then((result) => app.listen(port)).catch((err) => console.log(err));
 
 //Middleware
 app.use(express.json());

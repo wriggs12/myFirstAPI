@@ -12,4 +12,7 @@ mongoose.connect(process.env.DB_Connection).then((result) => app.listen(port)).c
 app.use(express.json());
 
 const carsRoute = require('./routes/cars');
+const countriesRoute = require('./routes/countries');
+
 app.use('/cars', carsRoute);
+app.use('/country', countriesRoute);

@@ -12,21 +12,13 @@
   </a>
 </p>
 
-I wanted to learn machine learning so I decided to learn by doing. 
-Currently adding new models from scratch as I learn about them. 
-I've implemented KNN, KMeans, Decision Trees, and Naive Bayes 
-Models.
+I wanted to learn about Restful API's and how they work. I built this API using node.js and mongodb. It is being hosted on heroku at 
+<a href="https://my-first-api-winstonriggs.herokuapp.com/">https://my-first-api-winstonriggs.herokuapp.com/</a>
 
 
 ## Lessons Learned
 
-I've learned that machine learning is mostly formatting and 
-standardizing the data and optimizing models rather than building 
-the models. I'd probabaly never build my own model from 
-scratch in the future as I can easily import it from a library.
-
-I've been able to fully understand the workings of several machine learning
-models and I am continuing to furthur my understanding of machine learning.
+I've learned how to connect to a database securely, build api endpoints, and use mongoose with node.js. This project also helped gain a deeper understanding in the inner workings of API's and how they work.
 
 ## Authors
 

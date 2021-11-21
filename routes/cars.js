@@ -1,10 +1,13 @@
+//import dependencies
 const express = require('express');
 const router = express.Router();
 const monggose = require('mongoose');
 const cars = require('../models/cars');
 
+//import car object
 const Car = require('../models/cars');
 
+// the /cars get endpoint
 router.get('/', (req, res) => {
     Car.find()
     .exec()
@@ -19,6 +22,7 @@ router.get('/', (req, res) => {
     });  
 });
 
+// the /cars post endpoint
 router.post('/', (req, res) => {
     const car = new Car({
         _id: new monggose.Types.ObjectId(),
@@ -35,4 +39,5 @@ router.post('/', (req, res) => {
     })
 });
 
+//export
 module.exports = router;
